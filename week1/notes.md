@@ -21,3 +21,6 @@ functional support for high-level patterns, such as map-reduce
 no side-effects -> data becomes immutable. Makes algorithms clearer and allows thread-safe programming => safe caching and sharing, and consistency
 
 --------------
+
+Compilation takes an `*.erl` file and produces a `*.beam` binary file
+Invoking a function needs to call its fully-qualified form, e.g. `first.double(3).`
