@@ -24,3 +24,15 @@ no side-effects -> data becomes immutable. Makes algorithms clearer and allows t
 
 Compilation takes an `*.erl` file and produces a `*.beam` binary file
 Invoking a function needs to call its fully-qualified form, e.g. `first.double(3).`
+
+--------------
+
+Erlang data types
+- Numbers : integers (bignums - arbitrarily large with full precision) and floats (different bases supported)
+- Atoms : just a piece of data. Can be compared for equality, ordering - can be used in pattern matching. Can match against atoms as components of bigger data structures
+- Booleans : special atoms `true`, `false`
+- Tuples and Lists : a `tuple` has a number of pieces of data. Common idiom: first field in a tuple indicates what sort of data the tuple represents. Typically, tuples are heterogeneous and lists are homogeneous. A tuple is built at one go while a list can be built up iteratively.
+- Strings : a string is a list of characters
+- Functions : can be data, or can be arguments or return values of other functions
+
+--------------
