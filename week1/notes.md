@@ -42,8 +42,9 @@ Variables and Pattern Matching
 - Erlang has single assignment variables
 - if a variable is not set (bound), `=` assigns it a value
 - else if the variable has been set, `=` performs a match operation
-- variables are not variant - we use them to name values and to define other values. Only in the shell can we forget bindings
+- variables cannot be changed - we use them to name values and to define other values. Only in the shell can we forget bindings
 - hence we can't use loops. Instead we use recursion
-- functions can have multiple clauses, separated by semi-colons and matched sequantially - use the first clause that matches successfully
+- functions can have multiple clauses, separated by semi-colons and **matched sequentially** - use the first clause that matches successfully. Analogy is a case/switch statement
+- pattern matching can also be used to check equality
 
 --------------
